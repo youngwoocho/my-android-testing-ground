@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = arrayOf(Word::class), version=1, exportSchema = false)
+@Database(entities = [Word::class], version=WordRoomDatabase.DATABASE_VERSION, exportSchema = false)
 abstract class WordRoomDatabase : RoomDatabase() {
 
     abstract fun wordDao(): WordDao
@@ -17,6 +17,7 @@ abstract class WordRoomDatabase : RoomDatabase() {
         private var INSTANCE: WordRoomDatabase? = null
 
         private const val DATABASE_NAME = "word_database"
+        const val DATABASE_VERSION = 1
 
         fun getDatabase(context: Context): WordRoomDatabase {
             return INSTANCE ?: synchronized(this) {
@@ -29,7 +30,5 @@ abstract class WordRoomDatabase : RoomDatabase() {
                 instance
             }
         }
-
-
     }
 }

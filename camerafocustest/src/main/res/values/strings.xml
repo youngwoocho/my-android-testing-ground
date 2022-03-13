@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">CameraFocusTest</string>
     <string name="text_view_support_autofocus">Support AutoFocus?\n%1$s</string>
+    <string name="camera_permission_not_granted">Permissions not granted by the user</string>
 </resources>

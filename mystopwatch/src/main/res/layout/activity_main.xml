@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:textSize="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="100dp"
+            android:text="Start"
+            android:background="@drawable/round_button"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="100dp"
+            android:text="Stop"
+            android:background="@drawable/round_button"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="25dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:enabled="false"
+            android:layout_width="100dp"
+            android:text="Reset"
+            android:background="@drawable/round_button"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>
